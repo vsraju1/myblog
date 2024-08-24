@@ -5,7 +5,7 @@ const User = require("../models/User.models");
 const Post = require("../models/Post.models");
 const Comment = require("../models/Comments.models");
 const JWT = require("jsonwebtoken");
-const verifyToken = require("../VerigyToken");
+const verifyToken = require("../VerifyToken");
 
 // Update user
 router.put("/:id", verifyToken, async (req, res) => {
